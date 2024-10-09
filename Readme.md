@@ -68,7 +68,7 @@ To run this project locally, follow these steps:
    ```
 
 5. **Configure MySQL:**
-   In both `index.js` and `insertData.js`, update the MySQL password with your own password in the following snippet:
+   In both `index.js` and `insertData.js`, enter the MySQL password in the following snippet:
    ```js
    password: "your-password"
    ```
