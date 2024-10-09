@@ -20,7 +20,7 @@ app.use(methodOverride("_method"));
 const connection  = mysql.createConnection({
     host: "localhost",
     user: "root",
-    password: "mys12@$_Aqrt",
+    password: "[mysql password]",
     database: "Home"
 });
 

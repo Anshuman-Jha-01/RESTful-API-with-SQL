@@ -47,12 +47,12 @@ To run this project locally, follow these steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/sql-data-management-app.git
+   git clone https://github.com/Anshuman-Jha-01/RESTful-API-with-SQL.git
    ```
 
 2. **Navigate into the project directory:**
    ```bash
-   cd sql-data-management-app
+   cd RESTful-API-with-SQL
    ```
 
 3. **Install dependencies:**
