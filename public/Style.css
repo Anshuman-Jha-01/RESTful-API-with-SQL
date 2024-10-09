@@ -1,0 +1,15 @@
+h1 {
+    color:maroon;
+}
+
+.record {
+    background-color: antiquewhite;
+    padding: 1px;
+    margin: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+form {
+    display: inline;
+}

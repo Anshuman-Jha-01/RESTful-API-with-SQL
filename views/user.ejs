@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Records</title>
+    <link rel="Stylesheet" href="/Style.css">
+</head>
+<body>
+    <!-- Display all the records -->
+    <% for (let item of results) { %>
+        <div class="record">
+            <p><b>User ID:</b> <%= item.id %></p>
+            <p><b>Username:</b> <%= item.username %></p>
+            <p><b>Email:</b> <%= item.email %></p>
+            <!-- See details -->
+            <form method="get" action="http://localhost:8080/user/<%= item.id %>">
+                <button>See details</button>
+            </form> &nbsp;
+            <!-- Edit record -->
+            <form method="get" action="http://localhost:8080/user/edit/<%= item.id %>">
+                <button>Edit Record</button>
+            </form> &nbsp;
+            <!-- Delete record -->
+             <form method = "get" action="http://localhost:8080/user/delete/<%= item.id %>">
+                <button>Delete Record</button>
+             </form>
+        </div>
+    <% } %>
+    <br>
+    <!-- Add new record -->
+    <form method = "get" action="http://localhost:8080/new">
+        <button>Add new record</button>
+    </form> &nbsp;
+    <!-- View the total number of records -->
+    <button><a href="http://localhost:8080/">Show total number of records</a></button>
+</body>
+</html>
